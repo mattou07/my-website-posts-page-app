@@ -5,6 +5,8 @@
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="bulma.min.css">
+    <link rel="stylesheet" href="style.css">
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -21,11 +23,56 @@
     -->
     <title>React App</title>
   </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
+  <body class="has-navbar-fixed-top Site">
+      <main class="Site-content">
+          <nav class="navbar is-fixed-top is-info" role="navigation" aria-label="main navigation">
+              <div class="navbar-brand">
+                  <a class="navbar-item" href="index.html">
+                      <i class="fas fa-terminal"></i>
+                    </a>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                      <span aria-hidden="true"></span>
+                      <span aria-hidden="true"></span>
+                      <span aria-hidden="true"></span>
+                    </a>
+              </div>
+              <div class="navbar-menu">
+                  <a class="navbar-item">
+                      Home
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link">
+                        Topics
+                      </a>
+                  
+                      <div class="navbar-dropdown">
+                        <a class="navbar-item" href="topic-example.html">
+                          C#
+                        </a>
+                        <a class="navbar-item">
+                          Javascript
+                        </a>
+                        <a class="navbar-item">
+                          DevOps
+                        </a>
+                        <hr class="navbar-divider">
+                        <div class="navbar-item">
+                          Version 0.7.1
+                        </div>
+                      </div>
+                    </div>
+                    <a class="navbar-item">
+                      About me
+                    </a>
+              </div>
+            </nav>
+    <div class="columns">
+      <div class="column is-full">
+          <div id="root"></div>
+      </div>
+      
+    </div>
+    
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -36,5 +83,18 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+  </main>
+  <footer class="footer">
+      <div class="container">
+          <nav class="level">
+              <div class="level-left"></div>
+              <div class="level-right">
+                  <a class="level-item" href="">Github</a>
+                  <a class="level-item" href="">Twitter</a>
+                  <a class="level-item" href="">Linkedin</a>
+              </div>
+          </nav>
+      </div>
+  </footer>
   </body>
 </html>
